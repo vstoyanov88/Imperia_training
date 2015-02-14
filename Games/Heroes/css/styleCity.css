@@ -1,0 +1,327 @@
+@CHARSET "UTF-8";
+
+#wrapperCity{
+	border: 1px solid black;
+	width: 1200px;
+	height: auto;	
+	background: url('../img/stonewall.jpg');
+	padding: 10px;
+	margin: auto;
+	padding: 0;
+	position: relative;
+	display: block;
+}
+
+#city{
+	position: relative;
+	width: 800px;
+	height: 500px;
+	background: url("../img/grass.png");
+	display: inline-block;
+	border:1px solid black;
+	backgroundRepeat: repeat;
+}
+#side-panel{
+	position: relative;
+	width: 350px;
+	height: 500px;
+	background: url("../img/buildings/wall.png");
+	background-size: 100% 100%;
+	float: right;
+	border: 1px solid black;
+}
+
+.building:hover {
+    cursor: pointer;
+}
+
+#hero{
+	position: relative;
+	background: url("../img/big_hero.png") no-repeat 80% 0px;
+	width: 80%;
+	margin: auto;
+	padding: 0 1em;
+	height: 120px;
+	display: inline-block;
+}
+
+#out{
+	width: 60px;
+	height: 60px;
+	display: inline-block;
+	position: absolute;
+	right: 1em;
+	bottom: 1em;	
+}
+#btn-getOut{
+	width: 100%;
+	height: 100%;
+	background: #A56937;
+	border-radius: 20px;
+	border: none;
+}
+button:hover{
+	cursor: pointer;
+}
+.pos{
+	width: 80px;
+	height: 100px;
+	display: inline-block;
+	border: 3px solid black;
+	margin-left: 1em;
+	float: left;
+	background: rgba(255,255,255,0.3);
+}
+
+.castle{
+	display: inline-block;
+	position: absolute;
+	height: 200px;
+	width: 200px;
+	top: 5px;
+	left: 5px;
+}
+
+.castle.enabled {
+	background: url("../img/buildings/castle.png");
+	background-size: 100% 100%;	
+}
+
+.castle.disabled {
+	background: url("../img/buildings/castle_bw.png");
+	background-size: 100% 100%;	
+}
+
+.magic-tree{
+	display: inline-block;
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	top: 300px;
+	left: 100px;
+}
+
+.magic-tree{
+	display: inline-block;
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	top: 300px;
+	left: 50px;
+}
+.magic-tree.enabled {
+	background:  url("../img/buildings/magic-tree.png");
+	background-size: 100% 100%;	
+}
+
+.magic-tree.disabled{
+	background: url("../img/buildings/magic-tree_bw.png");
+	background-size: 100% 100%;	
+}
+
+.woodMine{
+	display: inline-block;
+	position: absolute;
+	width: 220px;
+	height: 150px;
+	top: 0;
+	right: 0;
+	background: url("../img/buildings/woodMine.png");
+	background-size: 100% 100%;	
+}
+
+.oreMine{
+	display: inline-block;
+	position: absolute;
+	width: 160px;
+	height: 95px;
+	top: 300px;
+	left: 300px;
+	background: url("../img/buildings/oreMine.png");
+	background-size: 100% 100%;	
+}
+
+
+.dragon{
+	display: inline-block;
+	position: absolute;
+	height: 150px;
+	width: 150px;
+	top: 200px;
+	left: 450px;
+}
+
+.dragon.enabled{
+	background: url("../img/buildings/dragon.png");
+	background-size: 100% 100%;	
+}
+
+.dragon.disabled{
+	background: url("../img/buildings/dragon_bw.png");
+	background-size: 100% 100%;	
+}
+
+
+.glass-hall{
+	display: inline-block;
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	top: 10px;
+	left: 300px;
+}
+.glass-hall.enabled{
+	background: url("../img/buildings/glass-hall.png");
+	background-size: 100% 100%;	
+}
+
+.glass-hall.disabled{
+	background: url("../img/buildings/glass-hall_bw.png");
+	background-size: 100% 100%;	
+}
+
+.crab-layer{
+	display: inline-block;
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	bottom: 20px;
+	right: 20px;
+}
+.crab-layer.enabled {
+	background:  url("../img/buildings/crab_layer.png");
+	background-size: 100% 100%;	
+}
+
+.crab-layer.disabled{
+	background: url("../img/buildings/crab_layer_bw.png");
+	background-size: 100% 100%;	
+}
+
+#side-panel.disabled>* {
+    visibility: hidden;
+}
+
+#side-panel .image-placeholder img {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 1em auto;
+}
+
+.hidden {
+    display: none;
+}
+
+#btn-buy-building{
+	background: #A56937;
+	border-radius: 20px;
+	border: 0;
+	font-size: 1.2em;
+}
+
+#building-name{
+	width: 200px;
+	height: 20px;
+	text-align: center;
+	margin: auto;
+}
+#population{
+	width: 150px;
+	height: 20px;
+	text-align: center;
+	margin: auto;
+}
+#monster-name{
+	width: 150px;
+	height: 20px;
+	margin: 20px auto;
+	text-align:center;
+	font-size: 1.5em;
+}
+#monster-img{
+	border: 0;
+	width: 125px;
+	height: 125px;	
+	display: inline-block;
+	float: left;
+	background-size: 100% 100%;
+	margin-bottom: 10px;
+}
+
+#monster-img img{
+	width: 140px;
+	height: 140px;
+	float: left;
+	border: 0;
+}
+
+#monster-price, #monster-healt, #monster-damage, #monster-number{
+	width: 150px;
+	margin: auto;
+	text-align: center;
+}
+#btn-buy-monster{
+	background: #A56937;
+	border-radius: 20px;
+	border: 0;
+	font-size: 1.2em;
+}
+.buy-btn-placeholder{
+	text-align: center;
+	width: 200px;
+	margin: auto;
+}
+#new-day{
+	width: 200px;
+	heihgt: 200px;
+	position: absolute;
+	top: 20px;
+	left: 500px;
+	border: 1px solid black;
+	text-align: center;
+	background: #DEC78A;
+}
+#get-new-day,#no-army-confirm,#no-stamina-confirm{
+	background: #A56937;
+	border: 0;
+	border-radius: 20px;
+	font-size: 1.2em;
+}
+#end-game{
+	width: 1200px;
+	height: 500px;
+	background: black;
+	margin: auto;
+	text-align: center;
+	font-size: 2em;
+}
+#win {
+    position: absolute;
+    width:1200px;
+    height:500px;
+    top:0;
+    left:50px;
+    background-color: black;
+    text-align: center;
+    font-size:2em;
+}
+
+#end-game h1,#win h1{
+	color: white;
+	font-weight: strong;
+	/*padding: 2em;*/
+}
+#end-game a,#win a{
+	text-decoration: none;
+}
+#no-stamina,#no-army{
+	heihgt: 200px;
+	width: 300px;
+	position: absolute;
+	top: 20px;
+	right: 40%;
+	border: 1px solid black;
+	text-align: center;
+	background: #DEC78A;
+}

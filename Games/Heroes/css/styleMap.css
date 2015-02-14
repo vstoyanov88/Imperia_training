@@ -1,0 +1,78 @@
+body {
+    /*font-family: 'Architects Daughter', cursive;*/
+    font-family: fantasy;
+    overflow-y:hidden;
+}
+#containerMap {
+	width: 1200px;
+	height: 550px;
+    margin:0 auto;
+    background:url('../img/grass.png');
+}
+#resources {
+    width: 1200px;
+    margin: 0 auto;
+    height: 50px;
+    background: url('../img/stonewall.jpg');
+}
+#hero_canvas {
+    margin:0 auto;
+    position: absolute;
+    z-index: 2;
+}
+.city:hover {
+    cursor:pointer;
+}
+.resource_display {
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    font-size: 1.4em;
+    margin-left:15%;
+    background-color: rgba(255,255,255,0.3);
+    border: 1px solid white;
+}
+#end_turn {
+    position: absolute;
+    top:8px;;
+    left:90vw;
+    background: url('../img/stonewall.jpg');
+    height:600px;
+    width:5vw;
+}
+#end_img {
+    display: inline-block;
+    margin-top: 200px;
+}
+hr {
+    height:5px;
+    background-color: darkgreen;
+    float:left;
+    margin-left:75px;
+    width: 1200px;
+}
+#end_turn h3 {
+    text-align: center;
+    color:orange;
+}
+h3:first-of-type {
+    position: relative;
+    top: 32.5%;
+}
+#end_img:hover {
+    cursor: url(../img/circular_cursor.png),auto;
+}
+
+@-webkit-keyframes rotateClock {
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(180deg);}
+}
+@-webkit-keyframes reverseClock {
+    from {-webkit-transform: rotate(180deg);}
+    to {-webkit-transform: rotate(0deg);}
+}
+.animation {
+    -webkit-animation-name: rotateClock;
+    -webkit-animation-duration: 1s;
+    -wevkit-animation-fill-mode: backwards;
+}

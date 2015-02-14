@@ -1,0 +1,27 @@
+#score{
+	font-size: 2em;
+	font-weight: bold;
+}
+
+#gameOver{
+	display: none;
+	position: absolute;
+	width: 20%;
+	font-size: 2em;
+	left: 3em;
+	text-align: center;
+	color: red;
+}
+
+#start{
+	position: absolute;
+	width: 20%;
+	font-size: 2em;
+	margin: auto;
+	text-align: center;
+}
+
+.pointer:hover {
+	cursor: pointer;
+}
+

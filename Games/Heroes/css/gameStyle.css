@@ -1,0 +1,49 @@
+#wrapperCity {
+    display:none;
+}
+#wrapperBattle {
+    display: none;
+}
+#turnOrderDisplay {
+    width: 1200px;
+    height: 70px;
+    display: inline-block;
+    border: 1px solid orange;
+    margin:0 auto;
+}
+body {
+    background-image: url('../img/background.png');
+    background-repeat: no-repeat;
+}
+.woods {
+    width: 10%;
+    position: relative;
+    left:200px;
+}
+#woods1 {
+    position: absolute;
+    top:30px;
+    left:300px;
+}
+#woods2 {
+    position: absolute;
+    top:20px;
+    left:600px;
+}
+#no-stamina{
+	padding: 1em;
+	position: absolute;
+}
+#no-stamina-confirm{
+	margin-top: 0.2em;
+}
+/*#containerMap {*/
+    /*display: none;*/
+/*}*/
+/*#resources {*/
+    /*display: none;*/
+/*}*/
+/*#end_turn {*/
+    /*display: none;*/
+/*}*/
+

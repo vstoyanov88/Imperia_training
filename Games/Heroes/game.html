@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Game</title>
+    <link rel="stylesheet" href="css/styleCity.css">
+    <script src="js/monsterGroup.js"></script>
+    <script src="js/battle.js"></script>
+    <script src="js/inheritance.js" type="text/javascript"></script>
+    <script src="js/ResourceLoader.js"></script>
+    <script src="js/Building.js" type="text/javascript"></script>
+    <script src="js/Castle.js" type="text/javascript"></script>
+    <script src="js/CrabLayer.js" type="text/javascript"></script>
+    <script src="js/WoodMine.js" type="text/javascript"></script>
+    <script src="js/OreMine.js" type="text/javascript"></script>
+    <script src="js/DragonMountain.js" type="text/javascript"></script>
+    <script src="js/MagicTree.js" type="text/javascript"></script>
+    <script src="js/GlassHall.js" type="text/javascript"></script>
+    <script src="js/City.js" type="text/javascript"></script>
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/globalValues.js"></script>
+    <script src="js/resources.js"></script>
+    <script src="js/map.js"></script>
+    <script type="text/javascript" src="js/monster.js"></script>
+    <script type="text/javascript" src="js/hero.js"></script>
+
+    <link href='http://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/styleMap.css"/>
+    <link rel="stylesheet" href="css/gameStyle.css"/>
+    <script type="text/javascript" src="js/scriptMap.js"></script>
+</head>
+<body>
+
+<div id="wrapperCity">
+    <div id="city">
+        <div class="building castle enabled"></div>
+        <div class="building crab-layer disabled"></div>
+        <div class="building oreMine enabled"></div>
+        <div class="building woodMine enabled"></div>
+        <div class="building magic-tree disabled"></div>
+        <div class="building glass-hall disabled"></div>
+        <div class="building dragon disabled"></div>
+    </div>
+    <div id="side-panel" class="disabled-123">
+        <div class="image-placeholder">
+            <img src="" alt="">
+        </div>
+       
+        <div class="building-info">
+			<div id="building-name"></div>
+        </div>
+        
+         <div class="buy-btn-placeholder hidden">
+         	<div id="building-gold"></div>
+         	<div id="building-wood"></div>
+         	<div id="building-ore"></div>
+            <button id="btn-buy-building">Buy</button>
+        </div>
+        
+        <div class="building-actions">
+        	<div id="monster-name"></div>
+        	<div id="population"></div>
+        	<div id="monster-img">
+        	</div>
+        	<div id="monster-healt"></div>
+        	<div id="monster-damage"></div>
+        	<div id="monster-price"></div>
+        	<div id="monster-number"></div>
+            <button id="btn-buy-monster" class="hidden">Buy</button>
+        </div>
+    </div>
+    <div id="hero">
+        <div id="pos1" class="pos"></div>
+        <div id="pos2" class="pos"></div>
+        <div id="pos3" class="pos"></div>
+        <div id="pos4" class="pos"></div>
+    </div>
+    <div id="out">
+    	<button id="btn-getOut">OUT YOU GO></button>
+    </div>
+    <div id="resources_city">
+
+    </div>
+</div>
+
+<div id="wrapperMap">
+    <img src="img/woods.png" alt="woods" class="woods" id="woods1"/>
+    <img src="img/tree1.png" alt="" class="woods" id="woods2"/>
+    <div id="containerMap">
+        <canvas width="200" height="200" id="hero_canvas"></canvas>
+    </div>
+    <div id="resources">
+    </div>
+    <div id="end_turn">
+        <h3>END</h3>
+        <img src="img/hourglass.png" id="end_img"/>
+        <h3>TURN</h3>
+    </div>
+    <hr/>
+</div>
+<div id="wrapperBattle">
+    <button id="returnMap">Return to map</button>
+
+    <div id="turnOrderDisplay">
+
+    </div>
+
+    <div id="battleScreen">
+
+    </div>
+   
+</div>
+ <div id="new-day" class="hidden">
+ 	<p id="new-day-count"></p>
+   	<button id="get-new-day">OK</button>
+ </div>
+ <div id="end-game">
+ 	<h1> You lost</h1>
+    <h2 id="pointsLose"></h2>
+ 	<a href="game.html">Play again</a><br/>
+ 	<a href="../main.html">Hell NO!</a>
+
+ </div>
+<div id="win">
+    <h1>You won!</h1>
+    <h2 id="pointsWin"></h2>
+    <a href="game.html">Play again</a>
+    <a href="../main.html">Return to website</a>
+</div>
+ <div id="no-stamina">
+	<span>Not enough stamina for such long journey - perhaps you can make it in a couple of days...</span>
+	<button id="no-stamina-confirm">OK</button>
+</div>
+ <div id="no-army">
+ 	<p>No monsters to wage war with!</p>
+ 	<button id="no-army-confirm">OK</button>
+ </div>
+</body>
+</html>
